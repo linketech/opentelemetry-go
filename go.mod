@@ -1,4 +1,4 @@
-module github.com/linketech/opentelemetry-go
+module github.com/linketech/opentelemetry-go/otel
 
 go 1.19
 
