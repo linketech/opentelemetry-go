@@ -142,3 +142,6 @@ func (s snapshot) DroppedEvents() int {
 func (s snapshot) ChildSpanCount() int {
 	return s.childSpanCount
 }
+
+// ChangeParentSpanContext do nothing
+func (s snapshot) ChangeParentSpanContext(trace.SpanContext) {}
