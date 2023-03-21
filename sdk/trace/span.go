@@ -91,6 +91,7 @@ type ReadOnlySpan interface {
 	// interface and so future additions to it will not
 	// violate compatibility.
 	private()
+	ChangeParentSpanContext(trace.SpanContext)
 }
 
 // ReadWriteSpan exposes the same methods as trace.Span and in addition allows
@@ -766,6 +767,13 @@ func (s *recordingSpan) runtimeTrace(ctx context.Context) context.Context {
 	s.mu.Unlock()
 
 	return nctx
+}
+
+// ChangeParentSpanContext change parent span info
+func (s *recordingSpan) ChangeParentSpanContext(parent trace.SpanContext) {
+	s.parent = s.parent.WithSpanID(parent.SpanID())
+	s.parent = s.parent.WithTraceID(parent.TraceID())
+	s.spanContext = s.spanContext.WithTraceID(parent.TraceID())
 }
 
 // nonRecordingSpan is a minimal implementation of the OpenTelemetry Span API
