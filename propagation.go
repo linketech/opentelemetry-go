@@ -15,7 +15,7 @@
 package otel // import "go.opentelemetry.io/otel"
 
 import (
-	"go.opentelemetry.io/otel/internal/global"
+	"github.com/linketech/opentelemetry-go/internal/global"
 	"go.opentelemetry.io/otel/propagation"
 )
 
