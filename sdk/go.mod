@@ -11,7 +11,7 @@ replace github.com/linketech/opentelemetry-go => ../
 require (
 	github.com/go-logr/logr v1.2.3
 	github.com/google/go-cmp v0.5.9
-	github.com/linketech/opentelemetry-go v1.14.8
+	github.com/linketech/opentelemetry-go v1.14.9
 	github.com/stretchr/testify v1.8.2
 	go.opentelemetry.io/otel v1.15.0-rc.1
 	go.opentelemetry.io/otel/sdk v1.14.0

@@ -20,8 +20,8 @@ import (
 	"sync"
 	"sync/atomic"
 
+	"github.com/linketech/opentelemetry-go/internal/global"
 	"go.opentelemetry.io/otel"
-	"go.opentelemetry.io/otel/internal/global"
 	"go.opentelemetry.io/otel/sdk/instrumentation"
 	"go.opentelemetry.io/otel/sdk/resource"
 	"go.opentelemetry.io/otel/trace"

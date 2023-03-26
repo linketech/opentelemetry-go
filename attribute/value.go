@@ -20,8 +20,8 @@ import (
 	"reflect"
 	"strconv"
 
-	"go.opentelemetry.io/otel/internal"
-	"go.opentelemetry.io/otel/internal/attribute"
+	"github.com/linketech/opentelemetry-go/internal"
+	"github.com/linketech/opentelemetry-go/internal/attribute"
 )
 
 //go:generate stringer -type=Type
