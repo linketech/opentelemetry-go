@@ -16,14 +16,14 @@ package trace // import "go.opentelemetry.io/otel/sdk/trace"
 
 import (
 	"context"
+	otel "github.com/linketech/opentelemetry-go"
 	"runtime"
 	"sync"
 	"sync/atomic"
 	"time"
 
-	"go.opentelemetry.io/otel"
-	"go.opentelemetry.io/otel/internal/global"
-	"go.opentelemetry.io/otel/sdk/internal/env"
+	"github.com/linketech/opentelemetry-go/internal/global"
+	"github.com/linketech/opentelemetry-go/sdk/internal/env"
 	"go.opentelemetry.io/otel/trace"
 )
 
