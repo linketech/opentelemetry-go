@@ -18,7 +18,7 @@ import (
 	"os"
 	"strconv"
 
-	"go.opentelemetry.io/otel/internal/global"
+	"github.com/linketech/opentelemetry-go/internal/global"
 )
 
 // Environment variable names.
